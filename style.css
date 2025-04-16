@@ -1,0 +1,138 @@
+body {
+  background: linear-gradient(135deg, #fceabb, #f8b500);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.glow-text {
+  color: #ff6f00;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  text-align: center;
+  text-shadow:
+    0 0 5px #ffd580,
+    0 0 10px #ffb300,
+    0 0 20px #ffa000,
+    0 0 40px #ff6f00,
+    0 0 60px #ff8f00,
+    0 0 80px #ff6f00;
+  animation: neon-glow 1.8s ease-in-out infinite alternate;
+}
+
+#countdown .row > div {
+  font-family: 'Orbitron', sans-serif;
+  white-space: nowrap;
+}
+
+.orange-text {
+  color: #fa2419;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+@keyframes neon-glow {
+  from {
+    text-shadow:
+      0 0 5px #ffd580,
+      0 0 10px #ffb300,
+      0 0 20px #ffa000,
+      0 0 40px #ff6f00,
+      0 0 60px #ff8f00,
+      0 0 80px #ff6f00;
+  }
+
+  to {
+    text-shadow:
+      0 0 10px #ffecb3,
+      0 0 20px #ffc107,
+      0 0 30px #ff9800,
+      0 0 60px #ff5722,
+      0 0 80px #ff6f00,
+      0 0 100px #ff6f00;
+  }
+}
+
+.card {
+  background-color: #ffffffcc;
+  color: #111;
+  border-radius: 16px;
+}
+
+footer {
+  background-color: #fff0d6;
+  color: #333;
+}
+
+.btn-warning {
+  box-shadow: 0 10px 10px #ff5722;
+}
+
+#scrollTopBtn {
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  font-weight: bold;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#countdown {
+  text-align: center;
+}
+
+.hero-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.custom-heading {
+  font-family: 'Cinzel', serif;
+  font-weight: 800;
+  font-size: 1.7rem;
+  margin: 0;
+  color: #c10202;
+}
+
+.custom-subheading {
+  font-family: 'Cinzel', serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.college-info-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.text-lines {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.college-logo {
+  height: 60px;
+}
+
+@media (max-width: 768px) {
+  .glow-text {
+    font-size: 2.2rem;
+  }
+}
