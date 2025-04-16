@@ -136,3 +136,61 @@ footer {
     font-size: 2.2rem;
   }
 }
+input[type="file"] {
+  padding: 10px;
+}
+/* Button Styling */
+.btn-upload {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  background: linear-gradient(45deg, #ff6f61, #ffbc00);
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 8px 15px rgba(255, 165, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.btn-upload:hover {
+  background: linear-gradient(45deg, #ffbc00, #ff6f61);
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(255, 165, 0, 0.5);
+}
+
+.btn-upload:focus {
+  outline: none;
+}
+
+.btn-upload:active {
+  transform: scale(1.02);
+}
+/* Container settings for section */
+#products {
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background for contrast */
+  border-radius: 10px;
+}
+
+/* Ensures products list items are well spaced */
+.list-group-item {
+  padding: 15px;
+  font-size: 1rem;
+  text-align: left;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 767px) {
+  .list-group-item {
+    font-size: 0.9rem; /* Slightly smaller text for small screens */
+  }
+}
