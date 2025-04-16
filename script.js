@@ -19,9 +19,15 @@ const updateCountdown = () => {
   if (distance < 0) {
     eventStatus.innerText = "📅 The event has started! 🚀";
     clearInterval(timer);
-  } else {
-    eventStatus.innerText = "";
+
+    // Make sure upload button is still visible
+    const uploadCard = document.getElementById("upload-card");
+    if (uploadCard) {
+      uploadCard.style.display = "block";
+      uploadCard.style.visibility = "visible";
+    }
   }
+
 };
 
 const timer = setInterval(updateCountdown, 1000);
